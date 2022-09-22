@@ -1,0 +1,14 @@
+-> --global hace que se configure a nivel global y no solo en ese proyecto.
+
+$ git config --global use.name "Nombre Preferido" -> configura el nombre de usuario de git
+$ git config --global user.email email@preferido.com -> configura el email de git
+$ git config --global core.editor "code --wait" -> configura VSCode como el editor por defecto. --wait hace que este se quede esperando a cerrar el fichero.
+$ git config --global -e -> abre el archivo .gitconfig con la configuración global de git
+$ git config --global core.autocrlf (true|input) -> configura la interpretación de los saltos de linea: Windows->true | Mac/Linux->input
+
+$ git init -> inicializa el repositorio en .git
+
+$ git status -> te muestra el estado de los archivos (Untracked, Staged, Committed)
+
+$ git add <archivo> -> añade el archivo al Stage
+
