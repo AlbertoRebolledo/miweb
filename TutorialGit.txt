@@ -1,0 +1,46 @@
+CONFIGURACIÓN
+
+-> --global hace que se configure a nivel global y no solo en ese proyecto.
+
+$ git config --global use.name "Nombre Preferido" -> configura el nombre de usuario de git
+$ git config --global user.email email@preferido.com -> configura el email de git
+$ git config --global core.editor "code --wait" -> configura VSCode como el editor por defecto. --wait hace que este se quede esperando a cerrar el fichero.
+$ git config --global -e -> abre el archivo .gitconfig con la configuración global de git
+$ git config --global core.autocrlf (true|input) -> configura la interpretación de los saltos de linea: Windows->true | Mac/Linux->input
+
+STAGES, COMMITS Y STATUS
+
+$ git init -> inicializa el repositorio en .git
+
+$ git status -> te muestra el estado de los archivos (Untracked, Staged, Committed)
+$ git status -s -> git status resumido
+
+$ git add <archivo> -> añade el archivo al Stage
+
+$ git commit -m "Mensaje descriptivo de la modificación" -> comprometemos los archivos en Stage
+
+$ git rm <archivo> -> eliminas un archivo y lo añades al Stage directamente (no hace falta el $ git add)
+
+$ git restore --staged <archivo> -> quita el archivo del Stage
+
+$ git restore <archivo> -> recupera totalmente el archivo eliminado
+
+$ git mv <archivo> <renombre_archivo> -> renombrar archivos y añadirlos directamente
+
+Para no añadir algunos archivos especificos: escribir los nombres de los archivos 
+a ignorar en el fichero .gitignore
+
+$ git diff -> modificaciones que se han producido
+$ git diff --staged -> modificaciones en etapa de Stage
+
+$ git log --oneline -> historial de commits
+
+BRANCHES
+
+$ git branch -> muestra las ramas que hay en el repositorio
+
+$ git checkout -b <nombre_nueva_rama> -> crear una rama
+
+$ git checkout <nombre_rama> -> cambiar de rama
+
+$ 
