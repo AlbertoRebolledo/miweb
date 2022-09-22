@@ -37,13 +37,24 @@ $ git log --oneline -> historial de commits
 
 BRANCHES
 
-<<<<<<< HEAD
-=======
-$ git branch -> muestra las ramas que hay en el repositorio
+$ git branch -> muestra todas las branches
 
-$ git checkout -b <nombre_nueva_rama> -> crear una rama
+$ git checkout -b <nombre_rama> -> crea una rama
+$ git branch <nombre_rama>
 
-$ git checkout <nombre_rama> -> cambiar de rama
+$ git checkout <nombre_rama> -> cambia de rama
 
->>>>>>> ramab
-$ 
+$ git merge <rama> -> en la rama donde queremos
+                        guardar los cambios, traer
+                        los cambios de otra rama
+
+INTERACCIONES CON LA NUBE (GITHUB)
+
+1. Creas un nuevo repositorio en github
+
+$ git remote add origin <url del repositorio> -> 
+
+$ git push -u origin master -> 
+
+Con esto, se añade el proyecto a github, que te pide usuario y el token de acceso
+
