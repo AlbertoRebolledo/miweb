@@ -54,7 +54,7 @@ INTERACCIONES CON LA NUBE (GITHUB)
 
 $ git remote add origin <url del repositorio> -> configura a donde debe enviar el push
 
-$ git push -u origin master -> añade los cambios de commit al remote en github.
+$ git push -u origin master -> añade los cambios de commit al remote en github
 
 Con esto, se añade el proyecto a github, que te pide usuario y el token de acceso
 
