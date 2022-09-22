@@ -37,4 +37,13 @@ $ git log --oneline -> historial de commits
 
 BRANCHES
 
+<<<<<<< HEAD
+=======
+$ git branch -> muestra las ramas que hay en el repositorio
+
+$ git checkout -b <nombre_nueva_rama> -> crear una rama
+
+$ git checkout <nombre_rama> -> cambiar de rama
+
+>>>>>>> ramab
 $ 
