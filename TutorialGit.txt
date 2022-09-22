@@ -12,3 +12,4 @@ $ git status -> te muestra el estado de los archivos (Untracked, Staged, Committ
 
 $ git add <archivo> -> añade el archivo al Stage
 
+$ git commit -m "Mensaje descriptivo de la modificación" -> comprometemos los archivos en Stage
